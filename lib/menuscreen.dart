@@ -52,7 +52,6 @@ class MailMenuScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 14),
 
-                  /// ОСНОВНЫЕ
                   const _MenuItem(
                     icon: Icons.inbox_outlined,
                     title: 'Несортированные',
@@ -67,8 +66,6 @@ class MailMenuScreen extends StatelessWidget {
                     icon: Icons.info_outline,
                     title: 'Оповещения',
                   ),
-
-                  /// РАЗДЕЛ
                   const Padding(
                     padding: EdgeInsets.fromLTRB(24, 22, 24, 10),
                     child: Text(
@@ -77,7 +74,6 @@ class MailMenuScreen extends StatelessWidget {
                     ),
                   ),
 
-                  /// СПИСОК
                   const _MenuItem(icon: Icons.star_border, title: 'Помеченные'),
                   const _MenuItem(icon: Icons.schedule, title: 'Отложенные'),
                   const _MenuItem(icon: Icons.label_outline, title: 'Важные'),
@@ -108,7 +104,6 @@ class MailMenuScreen extends StatelessWidget {
               ),
             ),
 
-            /// ПУСТОЕ ПРОСТРАНСТВО СПРАВА (как на скрине)
             Expanded(child: Container(color: const Color(0xFF1C120D))),
           ],
         ),
