@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_7/email_view_screen.dart';
 
 class EmailSearchScreen extends StatefulWidget {
   const EmailSearchScreen({super.key});
@@ -187,13 +188,9 @@ class EmailItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        // TODO: открыть письмо
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Открыто письмо от ${email.sender}'),
-            duration: const Duration(milliseconds: 500),
-          ),
-        );
+        Navigator.of(
+          context,
+        ).push(MaterialPageRoute(builder: (context) => EmailViewScreen()));
       },
       child: Container(
         padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
